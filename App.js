@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <TextInput>
+         <Text>Before{' '}</Text>
+         <Text style={{backgroundColor: 'white'}}>Open up App.js to start working on your app!</Text>
+         <Text>{' '}After</Text>
+      </TextInput>
       <StatusBar style="auto" />
     </View>
   );
